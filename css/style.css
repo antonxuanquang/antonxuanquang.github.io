@@ -131,11 +131,6 @@ body {
   background-color: #2980b9;
   color: #fff;
   border: 1px solid #2980b9;
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
 }
 
 .btn.btn-warning {
@@ -273,33 +268,32 @@ body {
   width: 100px;
   margin-top: 15px;
 }
+
 /* NAVIGATION
 ===========================*/
-.navbar {
-  margin-bottom: 0;
-  background-color: #ecf0f1;
-  border-color:transparent;
-}
 
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  margin-top: 10px;
-  border:none;
-  border-color:none;
+.navbar {
+  position: fixed;
+  background-color: #51BEAA;
+  border-color:transparent;
+  width: 100%;
 }
 
 .navbar-default ul.nav li a {
-  color: #34495e;
+  color: #fff;
   font-size: 20px;
 }
 
 .navbar-default ul.nav li a:hover {
-  color: #1abc9c;
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
+}
+
+.navbar-default .navbar-collapse {
+    padding-right: 50px;
 }
 
 #content .main-content {
@@ -322,6 +316,10 @@ body {
   right: 25px;
   margin-left: -1.5px;
 }*/
+
+.push{
+  margin-top: 80px;
+}
 
 .timeline > li {
   margin-bottom: 20px;
@@ -698,6 +696,23 @@ footer p {
   z-index: 1030 !important;
   position: fixed !important;
 }
+
+.emphasized {
+  font-size: 2em;
+  color: #51BEAA;
+}
+
+.emphasized:hover {
+  color: #51BEAA;
+  text-decoration: none;
+}
+
+.emphasized:visited {
+  color: #51BEAA;
+  text-decoration: none;
+}
+
+
 /*  RESPONSIVE
 =============================*/
 /* Smartphones (portrait) ----------- */
